@@ -35,7 +35,7 @@ module.exports = {
 module.exports = {
   plugins: [
     {
-      resolve: 'gatsby-plugin-htaccess',
+      resolve: 'gatsby-plugin-security-txt',
       options: {
         contact: 'https://www.example.com/johndoe',
       },
