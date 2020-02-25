@@ -1,7 +1,7 @@
 {
   "name": "gatsby-plugin-security-txt",
   "description": "Gatsby plugin that automatically creates security.txt for your site.",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "main": "index.js",
   "author": "Tomáš Fülöpp",
   "license": "MIT",
