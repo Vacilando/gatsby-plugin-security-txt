@@ -1,14 +1,14 @@
 const fs = require('fs-extra')
 const path = require('path')
 
-const setHost = require('gatsby-plugin-security-txt/utils/setSecurityTXT')
+const setSecurityTXT = require('./utils/setSecurityTXT')
 
 const getPath = (htPath, program) => path.join(program.directory, htPath, 'security.txt')
 const contentReadFile = pathToFile => fs.readFileSync(pathToFile, 'utf8')
 
 const getContent = (pathToFile, pluginOptions) => {
   let content = contentReadFile(pathToFile)
-  content = setSecurityTXT(content, pluginOptions.host)
+  content = setSecurityTXT(content, pluginOptions.contact)
   return content
 }
 
