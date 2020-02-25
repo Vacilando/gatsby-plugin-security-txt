@@ -24,10 +24,11 @@ module.exports = {
 
 ## Options
 
-| **Name**             | **Type**                        | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| :------------------- | :------------------------------ | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Contact          | string                  | A link or e-mail address for people to contact you about security issues. Remember to include "https://" for URLs, and "mailto:" for e-mails.                                                                                                                                                                                                                                                                                                                                                                                                       |
-                                                                                                                                                                                                                                                                           |
+| **Name** | **Type** | **Description** |
+| :- | :- | :- |
+| intro          | string                  | [OPTIONAL] Introductory words describing the use of the file. Default: "Information related to reporting security vulnerabilities of this site." |
+| contact        | string                  | [REQUIRED] [REQUIRED] A link or e-mail address for people to contact you about security issues. Remember to include "https://" for URLs, and "mailto:" for e-mails. See https://tools.ietf.org/html/draft-foudil-securitytxt#section-3.5.3 Default: — |
+| canonical          | string                  | [OPTIONAL] The most common URL for accessing your security.txt file. It is important to include this if you are digitally signing the security.txt file, so that researchers can know for sure that you didn't just steal someone else's file with the same content. See https://tools.ietf.org/html/draft-foudil-securitytxt#section-3.5.2 Default: — |
 
 ### Example Options:
 
