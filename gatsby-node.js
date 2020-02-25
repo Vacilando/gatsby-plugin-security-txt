@@ -1,4 +1,4 @@
-const fs = require('gatsby-plugin-security-txt/node_modules/fs-extra')
+const fs = require('fs-extra')
 const path = require('path')
 
 const setHost = require('gatsby-plugin-security-txt/utils/setSecurityTXT')
