@@ -2,9 +2,9 @@
 
 When security risks in web services are discovered by independent security researchers who understand the severity of the risk, they often lack the channels to disclose them properly. As a result, security issues may be left unreported. security.txt defines a standard to help organizations define the process for security researchers to disclose security vulnerabilities securely.
 
-security.txt is currently an Internet draft that has been submitted for [RFC review](https://tools.ietf.org/html/rfc5785).
+security.txt is currently an Internet draft that has been submitted for [RFC review](https://tools.ietf.org/html/draft-foudil-securitytxt-08).
 
-**Gatsby Plugin security.txt** creates a text file called security.txt under the .well-known directory of your project on every Gatsby build.
+**Gatsby Plugin security.txt** creates a text file called security.txt under the .well-known directory (see [RFC5785](https://tools.ietf.org/html/rfc5785)) of your project on every Gatsby build.
 
 ## Getting Started
 

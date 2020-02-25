@@ -1,14 +1,18 @@
 const fs = require('fs-extra')
 const path = require('path')
 
-const setSecurityTXT = require('./utils/setSecurityTXT')
+const setIntro = require('./utils/setIntro')
+const setContact = require('./utils/setContact')
+const setCanonical = require('./utils/setCanonical')
 
-const getPath = (htPath, program) => path.join(program.directory, htPath, 'security.txt')
+const getPath = (htPath, program) => path.join(program.directory, htPath, '.well-known/security.txt')
 const contentReadFile = pathToFile => fs.readFileSync(pathToFile, 'utf8')
 
 const getContent = (pathToFile, pluginOptions) => {
   let content = contentReadFile(pathToFile)
-  content = setSecurityTXT(content, pluginOptions.contact)
+  content = setIntro(content, pluginOptions.intro)
+  content = setContact(content, pluginOptions.contact)
+  content = setCanonical(content, pluginOptions.canonical)
   return content
 }
 

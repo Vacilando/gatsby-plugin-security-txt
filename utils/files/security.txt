@@ -1,1 +1,17 @@
-### CONTACT ###
+# Intro #
+
+# Contact #
+
+# Encryption #
+
+# Acknowledgements #
+
+# Preferred languages #
+
+# Canonical #
+
+# Policy #
+
+# Hiring #
+
+# Please see https://securitytxt.org/ for details of the specification of this file.
