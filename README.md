@@ -1,4 +1,5 @@
-<sup></sup># Gatsby Plugin security.txt
+<sup></sup>
+# Gatsby Plugin security.txt
 
 When security risks in web services are discovered by independent security researchers who understand the severity of the risk, they often lack the channels to disclose them properly. As a result, security issues may be left unreported. security.txt defines a standard to help organizations define the process for security researchers to disclose security vulnerabilities securely.
 
