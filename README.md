@@ -14,7 +14,7 @@ Gatsby plugin "gatsby-plugin-security-txt" creates a text file called security.t
 
    `yarn add gatsby-plugin-security-txt`
 
-2. Add to plugins in your gatsby-config.js
+2. Add to plugins in your **gatsby-config.js**
 
 ```javascript
 module.exports = {
@@ -22,9 +22,11 @@ module.exports = {
 }
 ```
 
-## Options
+3. Run `gatsby build`
 
-NB The only required directive is "contact".
+NB The resulting file will appear on path /.well-known/security.txt of your site only after it's built. It is **not enough** to run `gatsby develop`.
+
+## Options
 
 | **Name** | **Type** | **Description** |
 | :- | :- | :- |
@@ -37,7 +39,7 @@ NB The only required directive is "contact".
 | policy          | string                  | [OPTIONAL] A link to a policy detailing what security researchers should do when searching for or reporting security issues. Remember to include "https://". See https://tools.ietf.org/html/draft-foudil-securitytxt#section-3.5.6 Default: — |
 | hiring          | string                  | [OPTIONAL] A link to any security-related job openings in your organisation. Remember to include "https://". See https://tools.ietf.org/html/draft-foudil-securitytxt#section-3.5.5 Default: — |
 
-### Example Options:
+### Example Options
 
 ```javascript
 module.exports = {
@@ -54,13 +56,22 @@ module.exports = {
 }
 ```
 
+### Example Implementations
+
+A few real-world implementation examples of security.txt
+- https://www.google.com/.well-known/security.txt
+- https://www.npmjs.com/.well-known/security.txt
+- https://www.facebook.com/.well-known/security.txt
+- https://www.raiffeisen.ch/.well-known/security.txt
+- https://www.bbc.com/.well-known/security.txt
+
 ## Contributing
 
 Every contribution is very much appreciated. Feel free to file bugs, feature- and pull-requests.
 
 ## Thanks
 
-The security.txt syntax follows the excellent [security.txt](https://securitytxt.org/).
+The security.txt syntax follows specifications of the excellent [security.txt](https://securitytxt.org/).
 
 If this plugin is helpful for you, please star it on [GitHub](https://github.com/Vacilando/gatsby-plugin-security-txt).
 <sup></sup>
