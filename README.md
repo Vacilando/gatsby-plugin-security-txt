@@ -59,11 +59,11 @@ module.exports = {
 ### Example Implementations
 
 A few real-world implementation examples of security.txt
+- https://www.bbc.com/.well-known/security.txt
 - https://www.google.com/.well-known/security.txt
 - https://www.npmjs.com/.well-known/security.txt
 - https://www.facebook.com/.well-known/security.txt
 - https://www.raiffeisen.ch/.well-known/security.txt
-- https://www.bbc.com/.well-known/security.txt
 
 ## Contributing
 
