@@ -1,11 +1,11 @@
 {
   "name": "gatsby-plugin-security-txt",
   "description": "Gatsby plugin that automatically creates security.txt for your site.",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "main": "index.js",
   "author": "Tomáš Fülöpp",
   "license": "MIT",
-  "homepage": "https://github.com/Vacilando/gatsby-plugin-security-txt#readme",
+  "homepage": "https://vacilando.org/article/gatsby-plugin-securitytxt",
   "keywords": [
     "gatsby",
     "gatsby-plugin",
