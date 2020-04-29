@@ -18,7 +18,7 @@ Gatsby plugin "gatsby-plugin-security-txt" creates a text file called security.t
 
 ```javascript
 module.exports = {
-  plugins: ['gatsby-plugin-security-txt']
+  plugins: ['gatsby-plugin-security-txt'],
 };
 ```
 
@@ -49,10 +49,10 @@ module.exports = {
       options: {
         contact: 'https://www.example.com/johndoe',
         canonical: 'https://www.example.com/.well-known/security.txt',
-        languages: 'en, es, fr'
-      }
-    }
-  ]
+        languages: 'en, es, fr',
+      },
+    },
+  ],
 };
 ```
 
@@ -61,6 +61,7 @@ module.exports = {
 A few real-world implementation examples of security.txt
 
 - https://www.bbc.com/.well-known/security.txt
+- https://www.theguardian.com/.well-known/security.txt
 - https://www.google.com/.well-known/security.txt
 - https://www.npmjs.com/.well-known/security.txt
 - https://www.facebook.com/.well-known/security.txt
