@@ -67,6 +67,12 @@ A few real-world implementation examples of security.txt
 - https://www.facebook.com/.well-known/security.txt
 - https://www.raiffeisen.ch/.well-known/security.txt
 
+## More documentation
+
+A body of additional documentation is growing at https://vacilando.org/article/gatsby-plugin-securitytxt
+
+We also welcome links to sites that make use of this plugin. Send us a representative link to your security.txt and we will consider it for inclusion on the documentation page.
+
 ## Thanks
 
 The security.txt syntax follows specifications of the excellent [security.txt](https://securitytxt.org/).
