@@ -9,6 +9,7 @@ const setPreferredLanguages = require('./utils/setPreferredLanguages')
 const setCanonical = require('./utils/setCanonical')
 const setPolicy = require('./utils/setPolicy')
 const setHiring = require('./utils/setHiring')
+const setExpires = require('./utils/setExpires')
 
 const getPath = (htPath, program) => path.join(program.directory, htPath, '.well-known/security.txt')
 const contentReadFile = pathToFile => fs.readFileSync(pathToFile, 'utf8')
@@ -23,6 +24,7 @@ const getContent = (pathToFile, pluginOptions) => {
   content = setCanonical(content, pluginOptions.canonical)
   content = setPolicy(content, pluginOptions.policy)
   content = setHiring(content, pluginOptions.hiring)
+  content = setExpires(content, pluginOptions.expires)
   return content
 }
 
