@@ -36,9 +36,9 @@ NB The resulting file will appear on path /.well-known/security.txt of your site
 | acknowledgements | string   | [OPTIONAL] A link to a web page where you say thank you to security researchers who have helped you. Remember to include "https://". See https://tools.ietf.org/html/draft-foudil-securitytxt#section-3.5.1 Default: —                                                                                                                                 |
 | languages        | string   | [OPTIONAL] A comma-separated list of language codes that your security team speaks. You may include more than one language. See https://tools.ietf.org/html/draft-foudil-securitytxt#section-3.5.7 Default: en                                                                                                                                         |
 | canonical        | string   | [OPTIONAL] The most common URL for accessing your security.txt file. It is important to include this if you are digitally signing the security.txt file, so that researchers can know for sure that you didn't just steal someone else's file with the same content. See https://tools.ietf.org/html/draft-foudil-securitytxt#section-3.5.2 Default: — |
-| policy           | string   | [OPTIONAL] A link to a policy detailing what security researchers should do when searching for or reporting security issues. Remember to include "https://". See https://datatracker.ietf.org/doc/html/draft-foudil-securitytxt#section-3.5.7 Default: —                                                                                                         |
-| hiring           | string   | [OPTIONAL] A link to any security-related job openings in your organisation. Remember to include "https://". See https://datatracker.ietf.org/doc/html/draft-foudil-securitytxt#section-3.5.6 Default: —                                                                                                                                                         |
-| expires          | string   | [OPTIONAL] An ISO 8601 date and time after which the data contained in the "security.txt" file is considered stale and should not be used. See https://datatracker.ietf.org/doc/html/draft-foudil-securitytxt#section-3.5.5 Default: —                                                                                                                                                         |
+| policy           | string   | [OPTIONAL] A link to a policy detailing what security researchers should do when searching for or reporting security issues. Remember to include "https://". See https://datatracker.ietf.org/doc/html/draft-foudil-securitytxt#section-3.5.7 Default: —                                                                                               |
+| hiring           | string   | [OPTIONAL] A link to any security-related job openings in your organisation. Remember to include "https://". See https://datatracker.ietf.org/doc/html/draft-foudil-securitytxt#section-3.5.6 Default: —                                                                                                                                               |
+| expires          | string   | [OPTIONAL] An ISO 8601 date and time after which the data contained in the "security.txt" file is considered stale and should not be used. See https://datatracker.ietf.org/doc/html/draft-foudil-securitytxt#section-3.5.5 Default: —                                                                                                                 |
 
 ### Example Options
 
@@ -51,6 +51,7 @@ module.exports = {
         contact: 'https://www.example.com/johndoe',
         canonical: 'https://www.example.com/.well-known/security.txt',
         languages: 'en, es, fr',
+        expires: '2025-12-31T23:59:59z',
       },
     },
   ],
